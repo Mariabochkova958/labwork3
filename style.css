@@ -1,15 +1,24 @@
 .header {
-    background:  #f5eada;
+    background:  #d8c8b8;
     padding: 15px;
     text-align: right;
     margin-bottom: 20px;
 }
+.header a {
+    background: #630006;
+    color: #d8c8b8;
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
 body {
     background: #f5eada;
-    font-family: 'noto sans'; 
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
 }
+
 h1 {
     color: #630006;
     font-size: 25px;
@@ -45,6 +54,7 @@ a {
     text-decoration: none;
     border-radius: 3px;
 }
+
 .content {
     display: flex;
     gap: 20px;
@@ -53,79 +63,86 @@ a {
 
 .content-left {
     flex: 2;
-}
-
-.content-right {
+} 
+content-right {
     flex: 1;
-}
+} 
+
 .content-left {
     background: white;
     padding: 25px;
     border-radius: 10px;
-    margin-right: 10px;
 }
 
 .content-right {
-    background: #ffffff;
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    margin-left: 10px;
 }
+
 .profile-photo {
     width: 100%;
     height: auto;
     border-radius: 5px;
     border: 2px solid #d8c8b8;
 }
+
 .container {
     background: #d8c8b8;
     padding: 30px;
     margin: 20px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-}    
+    text-align: center;
+}
+
 .block {
     width: 200px;
     height: 200px;
     background: #630006;
     border-radius: 5px;
+    margin: 0 auto;
 }
+
 .centered-image {
     width: 200px;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     border: 2px solid #630006;
     border-radius: 5px;
+    display: block;
 }
+
 .container-2 {
-    background: #d8c8b8; 
-    height: 400px; 
+    background: #d8c8b8;
+    height: 400px;
     margin: 20px;
-    position: relative; 
-     border-radius: 10px;
-}    
+    position: relative;
+    border-radius: 10px;
+}
+
 .block-2 {
     width: 200px;
     height: 200px;
-    background:  #630006; 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
+    background: #630006;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
 }
+
 .container-3 {
     background: #f5eada;
-    margin: 20px;
     padding: 20px;
     border: 2px solid #630006;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     gap: 10px;
     border-radius: 10px;
+    margin: 20px;
 }
+
 .block-3 {
     width: 200px;
     height: 200px;
@@ -134,53 +151,67 @@ a {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 20px;
-    border-radius: 5px;
-}
-.position-example {
-    background: #d8c8b8;
-    height: 300px;
-    margin: 20px;
-    position: relative; 
-    border: 2px solid #630006;
+    font-size: 25px;
     border-radius: 10px;
 }
 
-.relative-box {
-    width: 150px;
-    height: 150px;
-    background: #8B0000; 
-    position: relative; 
-    top: 20px; 
-    left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 10px;
-}
-
-.absolute-box {
-    width: 150px;
-    height: 150px;
+.block-4 {
+    width: 200px;
+    height: 200px;
     background: #630006;
-    position: absolute; 
-    bottom: 20px;
-    right: 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    font-size: 25px;
     border-radius: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px;
 }
+
+.block-5 {
+    width: 200px;
+    height: 200px;
+    background: #8B0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    position: relative;
+    top: -180px;
+    left: 100px;
+    margin: 20px;
+}
+
+.block-6 {
+    width: 200px;
+    height: 200px;
+    background: #630006;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    position: relative;
+    top: -360px;
+    left: 200px;
+    margin: 20px;
+}
+
 .fixed-cat {
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
+
 .fixed-cat img {
     width: 100px;
-    height: 130px;
+    height: 100px;
     border-radius: 10px;
     border: 2px solid #630006;
 }
